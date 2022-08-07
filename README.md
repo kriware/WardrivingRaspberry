@@ -86,4 +86,15 @@ Run kismet with the configuration file:
 kismet_server -f /etc/kismet/kismet.conf &
 ```
 
-Maybe I'm forgetting something, I always keep an eye on Twitter @kriwarez for any questions. 
+# Results
+
+Use my script netxml_to_csv.py with the resulting file `.netxml` to convert it to CSV:
+```bash
+python3 netxml_to_csv.py -i <netxml_result_file.netxml> -o results.csv
+```
+Now, using pandas and folium can be plotted on a map, I recommend using google Colab. Use `draw_aps.py`.
+
+References: [Hak5 video](https://www.youtube.com/watch?v=pFHUPs51CRQ)
+
+
+That's all, folks. Maybe I'm forgetting something, I always keep an eye on Twitter @kriwarez for any questions. 
