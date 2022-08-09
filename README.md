@@ -1,4 +1,4 @@
-# Wardriving with Rasbperry
+# Wardriving with Raspberry
 Wardriving Resources for my Youtube Video
 
 Kismet Version: 2016.07.R1-1
@@ -10,7 +10,7 @@ There are hundreds of thousands of tutorials on how to install RaspbianOS, this 
 
 [Raspbian OS Download](https://www.raspberrypi.com/software/operating-systems/)
 
-## Burning Rasbpian OS with dd command
+## Burning Raspbian OS with dd command
 
 ```bash
 sudo dd if=2021-10-30-raspios-bullseye-armhf.img of=/dev/sdX bs=4M conv=fsync status=progress
@@ -40,7 +40,7 @@ ACTION=="add", SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{idVendor}=="<your_id>"
 ```
 [List of wifi card for hacking](https://github.com/v1s1t0r1sh3r3/airgeddon/wiki/Cards%20and%20Chipsets)
 
-To reload udev without reset Rasbperry:
+To reload udev without reset Raspberry:
 ```bash
 udevadm control --reload-rules
 ```
